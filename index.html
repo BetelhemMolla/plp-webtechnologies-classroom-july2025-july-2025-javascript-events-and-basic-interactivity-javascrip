@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 6 - JavaScript Interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+    <p>Assignment: Events, Interactivity & Form Validation</p>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="showMessageBtn">Click Me</button>
+    <p id="messageArea"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Part 2: Interactive Features</h2>
+    <button id="toggleThemeBtn">Toggle Dark Mode</button>
+
+    <div class="counter-box">
+      <p>Counter: <span id="counterValue">0</span></p>
+      <button id="incrementBtn">Increment</button>
+      <button id="decrementBtn">Decrement</button>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Part 3: Custom Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required minlength="6" />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p id="formSuccess"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Week 6 Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
